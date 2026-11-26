@@ -1,5 +1,5 @@
 <!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>BARRE RESIDENCES – Stay beautifully in Nairobi</title>
+<title>KHALIF RESIDENCES – Stay beautifully in Nairobi</title>
 <meta name="description" content="Stylish furnished apartments in Nairobi from KSh 3,500 per night. Book directly on WhatsApp.">
 <link rel="icon" href="logo.jpg">
 <style>
@@ -52,7 +52,7 @@ footer{background:var(--navy);color:#cfd8e4;padding:34px 5vw;display:flex;justif
 @media(max-width:800px){.hero,.tour,.book{grid-template-columns:1fr}nav{display:none}.hero{min-height:auto}}
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}
 </style></head><body>
-<header><a href="#top"><img src="logo.jpg" alt="BARRE RESIDENCES"></a><nav><a href="#stays">Stays</a><a href="#tour">Video tour</a><a href="#gallery">Gallery</a><a href="#amenities">Amenities</a><a href="#book">Book</a></nav><a class="btn" href="#book" style="padding:10px 20px">Book now</a></header>
+<header><a href="#top"><img src="logo.jpg" alt="KHALIF RESIDENCES"></a><nav><a href="#stays">Stays</a><a href="#tour">Video tour</a><a href="#gallery">Gallery</a><a href="#amenities">Amenities</a><a href="#book">Book</a></nav><a class="btn" href="#book" style="padding:10px 20px">Book now</a></header>
 
 <section class="hero" id="top"><div><h1 class="in-load">Welcome home.<br><span>Stay beautifully.</span></h1>
 <p class="in-load" style="animation-delay:.15s">Stylish, fully furnished apartments in Nairobi with the comfort of home and the care of a hotel.</p>
@@ -79,7 +79,7 @@ footer{background:var(--navy);color:#cfd8e4;padding:34px 5vw;display:flex;justif
 <label>Guests</label><select id="gs"><option>1</option><option>2</option></select>
 <div class="total"><span id="nt">Select dates</span><span id="tt">KSh 0</span></div><button class="btn" style="width:100%" onclick="send()">Request on WhatsApp</button></div></section>
 
-<footer><span>© 2026 BARRE RESIDENCES · Nairobi, Kenya</span><span>WhatsApp: +254 723 977 950</span></footer>
+<footer><span>© 2026 KHALIF RESIDENCES · Nairobi, Kenya</span><span>WhatsApp: +254 723 977 950</span></footer>
 <a class="wa" href="https://wa.me/254723977950?text=Hello%20BARRE%20RESIDENCES" target="_blank" aria-label="WhatsApp">💬</a>
 <div id="lb" onclick="if(event.target===this)lbc()"><button class="x" onclick="lbc()">×</button><button class="nv" style="left:12px" onclick="lbn(-1)">‹</button><img id="li" alt=""><button class="nv" style="right:12px" onclick="lbn(1)">›</button></div>
 <div id="md" onclick="if(event.target===this)mc()"><div class="box"><button class="x" style="color:#222;position:static;float:right" onclick="mc()">×</button><h3 id="mt" style="margin:0;color:#0b2a4d"></h3><div class="sub" id="mp"></div><div id="sl"></div><p class="sub" id="md2"></p><a class="btn" href="#book" onclick="mc()" style="width:100%;text-align:center">Check dates &amp; book</a></div></div>
@@ -91,14 +91,14 @@ var L=[{n:"1BR Marina Bay Westlands",p:"Westlands, Nairobi",t:"Rooftop pool · G
 var all=[].concat(L[1].im,["img/v5.jpg"]),k=function(x){return "KSh "+x.toLocaleString("en-KE")};
 document.getElementById("g").innerHTML=L.map(function(x,i){return '<div class="card rv" onclick="mo('+i+')"><div class="ph"><img src="'+x.im[0]+'" alt="'+x.n+'" loading="lazy"><span class="badge">★ '+x.s+'</span></div><div class="info"><div class="row"><span>'+x.n+'</span></div><div class="sub">'+x.p+' · '+x.t+'</div><div class="sub price"><b>'+k(P)+'</b> / night</div></div></div>'}).join("");
 document.getElementById("st").innerHTML=L.map(function(x,i){return '<option value="'+i+'">'+x.n+'</option>'}).join("");
-document.getElementById("gl").innerHTML=L[0].im.concat(all).map(function(s,i){return '<img src="'+s+'" alt="BARRE RESIDENCES photo" loading="lazy" onclick="lbo('+i+')">'}).join("");
+document.getElementById("gl").innerHTML=L[0].im.concat(all).map(function(s,i){return '<img src="'+s+'" alt="KHALIF RESIDENCES photo" loading="lazy" onclick="lbo('+i+')">'}).join("");
 var G=L[0].im.concat(all),gi=0;
 function lbo(i){gi=i;li.src=G[i];lb.classList.add("on")}function lbc(){lb.classList.remove("on")}function lbn(d){gi=(gi+d+G.length)%G.length;li.src=G[gi]}
 function mo(i){var x=L[i];mt.textContent=x.n;mp.textContent=x.p+" · "+k(P)+" / night";md2.textContent=x.d;sl.innerHTML=x.im.map(function(s){return '<img src="'+s+'" alt="">'}).join("");st.value=i;calc();md.classList.add("on")}function mc(){md.classList.remove("on")}
 var t=new Date().toISOString().slice(0,10);ci.min=co.min=t;
 function calc(){var n=(new Date(co.value)-new Date(ci.value))/864e5;if(n>0){nt.textContent=n+" night"+(n>1?"s":"")+" × "+k(P);tt.textContent=k(n*P)}else{nt.textContent="Select dates";tt.textContent=k(0)}}
 function send(){var n=(new Date(co.value)-new Date(ci.value))/864e5,x=L[st.value];if(!(n>0)){alert("Please choose your check-in and check-out dates.");return}
-var m="Hello BARRE RESIDENCES, I’d like to book "+x.n+" ("+x.p+"). Name: "+nm.value+". Check-in: "+ci.value+", Check-out: "+co.value+" ("+n+" nights). Guests: "+gs.value+". Estimated total: "+k(n*P);window.open("https://wa.me/"+WA+"?text="+encodeURIComponent(m),"_blank")}
+var m="Hello KHALIF RESIDENCES, I’d like to book "+x.n+" ("+x.p+"). Name: "+nm.value+". Check-in: "+ci.value+", Check-out: "+co.value+" ("+n+" nights). Guests: "+gs.value+". Estimated total: "+k(n*P);window.open("https://wa.me/"+WA+"?text="+encodeURIComponent(m),"_blank")}
 document.addEventListener("keydown",function(e){if(e.key==="Escape"){lbc();mc()}if(lb.classList.contains("on")){if(e.key==="ArrowRight")lbn(1);if(e.key==="ArrowLeft")lbn(-1)}});
 var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target)}})},{threshold:.12});
 document.querySelectorAll(".rv").forEach(function(e,i){e.style.transitionDelay=(i%4)*80+"ms";io.observe(e)});
